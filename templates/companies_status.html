@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+
+{% for company in cp_status %}
+    <tr>
+        <td>{{ company.name }}</td>
+        <td>{{ company.status }}</td>
+    </tr>
+{% endfor %}

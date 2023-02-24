@@ -1,0 +1,24 @@
+<!-- Total won deals per customer from last year  -->
+{% extends 'layout.html' %}
+
+{% block body %}
+  <head>
+    <title>The Total value won deals per customer last year:</title>
+  </head>
+  <body>
+    <h2>Total value of won deals per customer - last year</h2>
+    <p> 2022:</p>
+    <table style="border-collapse:collapse;width: 60%">
+      <tr style="background-color:#CDE990">
+        <th style="border: 1px solid #ddd; padding: 7px;">Customer ID:</th>
+        <th style="border: 1px solid #ddd; padding: 7px;">Total Value of Won Deals</th>
+      </tr>
+      {% for customers, value in total_won_customer_deals.items()%}
+      <tr style="background-color: #FFFFE8">
+        <td style="border: 1px solid #CDE990; padding: 7px; ">{{customers}}</td>
+        <td style="border: 1px solid #CDE990; padding: 7px; ">{{ value|float }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+{% endblock %}

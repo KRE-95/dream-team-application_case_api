@@ -1,0 +1,50 @@
+company object [
+  {
+    "id": 0,
+    "name": "string",
+    "buyingstatus": {    // notintrested
+      "id": 0,
+      "key": "empty",
+      "text": "string"
+    },
+    "coworker": 0,
+    "postaladdress1": "string",
+    "visitingaddress1": "string",
+    "postaladdress2": "string",
+    "visitingaddress2": "string",
+    "postalzipcode": "string",
+    "postalcity": "string",
+    "visitingzipcode": "string",
+    "visitingcity": "string",
+    "country": "string",
+    "fullpostaladdress": "string",
+    "fullvisitingaddress": "string",
+    "phone": "string",
+    "www": "string",
+    "registrationno": "string",
+    "inactive": true
+  }
+]
+
+{'name': 'testing', 'phone': '046-270 48 00', 'www': 'www.lundalogik.se/test', 'postaladdress1': 'Sankt Lars väg 46',
+'visitingaddress1': 'Sankt Lars väg 46', 'registrationno': '556677-8888', 'coworker': None, 'postalzipcode': '222 70',
+ 'postalcity': 'Lund', 'visitingzipcode': '222 70', 'visitingcity': 'Lund', 'postaladdress2': '', 'visitingaddress2': '',
+ 'country': 'Norway', 'inactive': True, 'buyingstatus': {'id': 108601, 'key': 'active', 'text': 'Aktiv kund'}, 'fullpostaladdress':
+ 'Sankt Lars väg 46\n222 70 Lund', 'fullvisitingaddress': 'Sankt Lars väg 46\n222 70 Lund', 'debitorno': 0, 'prisfil': False,
+ '_id': 1002, '_timestamp': '2023-01-17T15:10:41.360000+01:00', '_descriptive': 'testing', '_updateduser': 3501, '_createduser': 1,
+ '_createdtime': '2016-06-27T14:19:35.607000+02:00', '_links': {'limetype':
+ {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limetype/company/',
+  'name': 'company'}, 'self': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/'}, '
+  relation_document':{'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/document/',
+  'name': 'document'}, 'relation_person': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/person/',
+  'name': 'person'}, 'relation_coworker': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/coworker/',
+  'name': 'coworker'}, 'relation_helpdesk':{'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/helpdesk/',
+  'name': 'helpdesk'}, 'relation_deal':  {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/deal/',
+  'name': 'deal'}, 'relation_todo': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/todo/',
+  'name': 'todo'}, 'relation_history':  {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/history/',
+  'name': 'history'}, 'new_document': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/document/new/'},
+  'new_person': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/person/new/'},
+  'new_helpdesk': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/helpdesk/new/'},
+  'new_deal': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/deal/new/'},
+ 'new_todo': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/todo/new/'},
+ 'new_history': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/company/1002/history/new/'}}}

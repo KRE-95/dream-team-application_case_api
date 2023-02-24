@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+     <head>
+         <title>
+             Shows the average deal from 2022 and presented in a pie chart.
+         </title>
+     </head>
+	<h1>Calculated average deal from last year - 2022: </h1>
+    <div class="card">
+    {% if avg_value %}
+        <p style="background-color: lightcoral; width: 30%; padding: 7px;"> Average deal: {{ avg_value|float}}</p>
+        <p style="background-color: coral; width: 30%; padding: 7px;"> Calculated average rounded deal: {{ avg_value|int}}</p>
+         <!-- Pygal - pie chart  -->
+        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+             <image xlink:href="{{ pie_data }}" x="0" y="0" height="300" width="500"></image>
+        </svg>
+    {% else %}
+      <h2>{{ msg }}</h2>
+    {% endif %}
+    </div>
+	<br>
+{% endblock %}
+
+

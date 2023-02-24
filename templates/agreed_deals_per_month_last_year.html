@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <head>
+    <title> Won Deals per month from last year: </title>
+  </head>
+    <h1 style="background-color: lightyellow" autofocus> Won deals per month - last year </h1>
+  <body>
+    <table style="border-collapse:collapse;width: 100%;">
+      <thead style="background-color: beige;">
+        <tr>
+          <th style="border: 1px solid #ddd; padding: 7px; ">Month</th>
+          <th style="border: 1px solid #ddd; padding: 7px;">Number of won deals</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for month, count in agreed_deals.items()|sort %}
+          <tr style="background-color:snow;">
+            <td style="border: 1px solid #ddd; padding: 7px;">{{ month}}</td>
+            <td style="border: 1px solid #ddd; padding: 7px;">{{ count }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+         <!-- Pygal -->
+        <div id="chart">
+            <!-- to remove b/n = byte string and convert it  -->
+         {{ chart_data.decode("utf-8")|safe}}
+        </div>
+  </body>
+{% endblock %}

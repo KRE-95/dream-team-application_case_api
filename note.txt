@@ -1,0 +1,75 @@
+Data Format Codes - w3shcools
+https://www.pygal.org/en/stable/index.html
+pareser python
+datetime from python
+
+
+    1. Average deal vale for won deals the last year
+     - First two errors:
+     -------------------
+     ValueError: time data '2019-06-05T00:00:00+02:00' does not match format '%Y-%m-%dT%H:%M:%SZ' python
+     TypeError: can't compare offset-naive and offset-aware datetimes.
+     datetime.strptim dont work with %Y-%m-%dT%H:%M:%SZ
+     - Solution was use pytz... and parser so UTC work , initialize both objects
+       to one UTC, so it will be easier to compare.
+
+     - Presented in Pygal pie chart and text:
+     ------------------------------------------
+     - Error: error in jinja2 : Namespace 'xlink' is not bound - svg:
+       Solution: add on the jinja2 file :
+        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image xlink:href="{{ pie_data }}" x="0" y="0" height="300" width="500"
+
+     Controlled value is going on CMS:
+     --------------------------------
+     be on deals - filter the section on date: from 01-01-2022 and 31-12-22.
+     filter on agreement
+     download the file on excel , calculare average: 537582,6286.
+
+
+    2. Number of won deals per month the last year
+
+      Controlled value:
+      -----------------
+      - get agreement deals , filter by closed date (like one above)
+      - export to excel fil - filter the file by months/date
+      - select the jan - it will show the three counts - deal jan , same does it on front-end.
+
+    - Present in pygal as bar chart:
+    -------------------------------
+      Not exactly an error, but on front-end of web, above bar chart
+      it was written b/'n - which looked complete ugly.
+      - solution: was adding a .slice (app.py) and on jinja file add, .decode("utf-8").
+      what it does it  remove b/'n = byte string and convert to string.
+
+    3. The total value of won deals per month the last year
+
+    - I Assume that company is customer
+    - I tried to get name of the company, but I got dealsname (which is wrong) instead of actual name of company.
+    - It shows customer ID of each company, with total value per month from last year
+
+    - A control is to check the CMS clint side - which is exactly alike. take the ID and filter search in value e.g.
+    1010 , go in companies in cms - write in Id : 1010 (equal)  - AB Culinar (DEMO), then go to deals find search on
+    company filter add the AB Culinar (DEMO), find values off three "deals" total value is 3025992.
+
+    - Presented on tabel by jinja2.
+
+    4. Didn't understand exactly the question.
+     Error:
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0) python = ingenting i objektet.
+    solution: The verb, of the objects did not exist. So it was pointless.
+    - would have done a test
+
+    Few  tweeks I would had adjusted:
+    ---------------------------------*
+    - have sorted the months in one order instead of alphabetical
+    - Find the companies name ....
+    - run a test on question 4 + understand.
+    - Cleaned the redundant on API call and on ptz.. utc , could had two methods and used in those three routs.
+    redundant the
+
+    -- (less imp):
+    - Showed a pygal chart on question 2 - just for fun - show in pie chart .
+    - Add a footer - info about company.
+    - Would like to have all deals related to one single page. While companies its own.

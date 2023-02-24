@@ -1,0 +1,44 @@
+deals[
+  {
+    "id": 0,
+    "name": "string",
+    "company": 0,
+    "person": 0,
+    "coworker": 0,
+    "dealstatus": {      // agreement
+      "id": 0,
+      "key": "contact",
+      "text": "string"
+    },
+    "value": "string",
+    "probability": "string",
+    "weightedvalue": "string",
+    "wonlostreason": "string",
+    "quotesent": "2023-02-08",
+    "expecteddate": "string",
+    "closeddate": "2023-02-08",
+    "todo2": 0
+  }
+]
+
+
+{'dealstatus': {'id': 15101, 'key': 'agreement', 'text': '4. Avtal'},
+'value': 500000.0, 'quotesent': '2016-08-25T00:00:00+02:00',
+ 'expecteddate': '2016-08-01T00:00:00+02:00', 'closeddate': '2019-06-05T00:00:00+02:00',
+ 'person': 1052, 'coworker': 1003, 'wonlostreason': '',
+ 'company': 1002, 'name': 'Big business!!', 'probability': 1.0,
+  'weightedvalue': 500000.0, 'todo2': None,
+  '_id': 1001, '_timestamp': '2022-12-21T00:05:50.257000+01:00', '_descriptive': 'Big business!!',
+  '_updateduser': 1701, '_createduser': 1, '_createdtime': '2016-06-27T14:43:41.657000+02:00', '_links': {'limetype':
+  {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limetype/deal/', 'name': 'deal'}, 'self':
+  {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/'},
+  'relation_person': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/person/',
+  'name': 'person'}, 'relation_document': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/document/',
+  'name': 'document'}, 'relation_coworker': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/coworker/',
+  'name': 'coworker'}, 'relation_company': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/company/',
+  'name': 'company'}, 'relation_history': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/history/',
+   'name': 'history'}, 'relation_todo': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/todo/',
+   'name': 'todo'}, 'relation_todo2': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/todo2/',
+   'name': 'todo2'}, 'new_document': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/document/new/'},
+   'new_history': {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/history/new/'}, 'new_todo':
+   {'href': 'https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/1001/todo/new/'}}}
